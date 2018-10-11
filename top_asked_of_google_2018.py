@@ -49,5 +49,5 @@ for name in list_of_names[::-1]:
             print('Error in name')
     else:
         print('Not alphanumeric')
-    count+=1
+    count += 1
 txt_file.close()

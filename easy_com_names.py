@@ -12,9 +12,11 @@ base_url = "https://domains.google.com/m/registrar/search?hl=en-US&tab=0&searchT
 url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/10001-20000"
 # url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/20001-30000"
 # url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/30001-40000"
+
 browser.get(url)  # navigate to the page
 browser.implicitly_wait(10)
 results = browser.find_elements_by_css_selector("td:nth-child(2)")
+
 for word in results:
     if word.text.isalnum():
         word = word.text
@@ -28,6 +30,7 @@ print('Done creating the list')
 listlen = str(len(list_of_names))
 print('List is ' + listlen + " long")
 count = 1
+
 for name in list_of_names[::-1]:
     print(str(count) + ' / ' + str(listlen))
     url = base_url + name + ".com"
