@@ -9,9 +9,9 @@ browser = webdriver.Chrome(options=options)
 list_of_names = []
 base_url = "https://domains.google.com/m/registrar/search?hl=en-US&tab=0&searchTerm="
 # url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/1-10000"
-url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/10001-20000"
+# url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/10001-20000"
 # url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/20001-30000"
-# url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/30001-40000"
+url = "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/30001-40000"
 
 browser.get(url)  # navigate to the page
 browser.implicitly_wait(10)
