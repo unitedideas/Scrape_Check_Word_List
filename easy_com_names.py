@@ -25,7 +25,7 @@ for word in results:
         word = word.text.replace(" ", "")
         list_of_names.append(word)
 
-txt_file = open("top_used_words_com.txt", "a+")
+txt_file = open("top_used_words_com_from_2015.txt", "a+")
 print('Done creating the list')
 listlen = str(len(list_of_names))
 print('List is ' + listlen + " long")
